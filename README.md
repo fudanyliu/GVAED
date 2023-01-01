@@ -3,7 +3,7 @@
 This is the official repository for our paper entitled *“Generalized Video Anomaly Event Detection: Systematic Classification and Comparison of Deep Models”* submitted to [ACM Computing Surveys](https://dl.acm.org/journal/csur). We summarize existing deep learning-based methods for video anomaly event detection (VAED) and classify the deep models  into four categories: unsupervised, weakly supervised, fully unsupervised, and hybrid supervised, according to the supervised signal for training. In addition, we collate the public VAED datasets and available codes.
 
 ## Overview
-
+![overview](overview.png)
 ## Datasets
 
 | Dataset                                                                                                                                 | #Videos | #Normal | #Abnormal | #Scenes | #Anomalies |
