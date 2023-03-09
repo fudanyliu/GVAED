@@ -1,9 +1,11 @@
-# Generalized Video Anomaly Event Detection: Systematic Classification and Comparison of Deep Models
+# Generalized Video Anomaly Event Detection: Systematic Taxonomy and Comparison of Deep Models
 
-This is the official repository for our paper entitled *“Generalized Video Anomaly Event Detection: Systematic Classification and Comparison of Deep Models”* submitted to [ACM Computing Surveys](https://dl.acm.org/journal/csur). We summarize existing deep learning-based methods for video anomaly event detection (VAED) and classify the deep models  into four categories: unsupervised, weakly supervised, fully unsupervised, and hybrid supervised, according to the supervised signal for training. In addition, we collate the public VAED datasets and available codes.
+This is the official repository for our [paper](https://arxiv.org/abs/2302.05087) entitled *“Generalized Video Anomaly Event Detection: Systematic Taxonomy and Comparison of Deep Models”* submitted to [ACM Computing Surveys](https://dl.acm.org/journal/csur). We summarize existing deep learning-based video anomaly event detection (VAED) methods and classify these deep models  into four categories: unsupervised, weakly supervised, supervised, and fully unsupervised according to the supervised signal for training. In addition, we collate the public VAED datasets and available codes.
 
 ## Overview
-![overview](overview.png)
+
+![overview.png](C:\Users\86188\Desktop\综述\Git\overview.png)
+
 ## Datasets
 
 | Dataset                                                                                                                                 | #Videos | #Normal | #Abnormal | #Scenes | #Anomalies |
@@ -574,11 +576,21 @@ $^{***}$ *This datatset include a validation set that contains 64 videos.*
   Detecting violence in video is a challenging task due to its complex scenarios and great intra-class variability. Most previous works specialize in the analysis of appearance or motion information, ignoring the co-occurrence of some audio and visual events. Physical conflicts such as abuse and fighting are usually accompanied by screaming, while crowd violence such as riots and wars are generally related to gunshots and explosions. Therefore, we propose a novel audio-guided multimodal violence detection framework. First, deep neural networks are used to extract visual and audio features, respectively. Then, a Cross-Modal Awareness Local-Arousal (CMA-LA) network is proposed for cross-modal interaction, which implements audio-to-visual feature enhancement over temporal dimension. The enhanced features are then fed into a multilayer perceptron (MLP) to capture high-level semantics, followed by a temporal convolution layer to obtain high-confidence violence scores. To verify the effectiveness of the proposed method, we conduct experiments on a large public violent video dataset, i.e., XD-Violence. Experimental results demonstrate that our model outperforms several methods and achieves new state-of-the-art performance.
   ```
 
-### 3. Supervised & Fully Unsupervised Methods
+### 3. Supervised Video Anomaly Detection
 
-#### 3.1 Supervised
+- [Background-bias](https://dl.acm.org/doi/abs/10.1145/3343031.3350998): Exploring Background-bias for Anomaly Detection in Surveillance Videos, `ACM MM`
+  
+  ```markdown
+  Anomaly detection in surveillance videos, as a special case of video-based action recognition, is an important topic in multimedia community and public security. Currently, most of the state-of-the-art methods utilize deep learning to recognize the patterns of anomaly or action. However, whether deep neural networks really learn the essence of the anomaly or just remember the background is an important but often neglected problem. In this paper, we develop a series of experiments to validate the existence of background-bias phenomenon, which makes deep networks tend to learn the background information rather than the pattern of anomalies to recognize abnormal behavior. To solve it, we first re-annotate the largest anomaly detection dataset and design a new evaluation metric to measure whether the models really learn the essence of anomalies. Then, we propose an end-to-end trainable, anomaly-area guided framework, where we design a novel region loss to explicitly drive the network to learn where is anomalous region. Besides, given very deep networks and scarce training data for anomaly, our architecture is trained with a meta learning module to prevent severe overfitting. Extensive experiments on the benchmark show that our approach outperforms other methods on both the previous and our proposed evaluation metrics through reducing the influence of the background information.
+  ```
 
-#### 3.2 Fully Unsupervised
+- [Ano-Locality](https://arxiv.org/abs/1901.10364): Anomaly Locality in Video Surveillance, `Arxiv`
+  
+  ```markdown
+  This paper strives for the detection of real-world anomalies such as burglaries and assaults in surveillance videos. Although anomalies are generally local, as they happen in a limited portion of the frame, none of the previous works on the subject has ever studied the contribution of locality. In this work, we explore the impact of considering spatiotemporal tubes instead of whole-frame video segments. For this purpose, we enrich existing surveillance videos with spatial and temporal annotations: it is the first dataset for anomaly detection with bounding box supervision in both its train and test set. Our experiments show that a network trained with spatiotemporal tubes performs better than its analogous model trained with whole-frame videos. In addition, we discover that the locality is robust to different kinds of errors in the tube extraction phase at test time. Finally, we demonstrate that our network can provide spatiotemporal proposals for unseen surveillance videos leveraging only video-level labels. By doing, we enlarge our spatiotemporal anomaly dataset without the need for further human labeling.
+  ```
+
+### 3 Fully Unsupervised Video Anomaly Detection
 
 - [MC2ST](https://chunliangli.github.io/docs/18bmvcAnomaly.pdf): Classifier Two-Sample Test for Video Anomaly Detections, `BMVC`, [Code](https://github.com/MYusha/Video-Anomaly-Detection)
   
@@ -612,13 +624,19 @@ $^{***}$ *This datatset include a validation set that contains 64 videos.*
   Video anomaly detection is well investigated in weakly supervised and one-class classification (OCC) settings. However, unsupervised video anomaly detection is quite sparse, likely because anomalies are less frequent in occurrence and usually not well-defined, which when coupled with the absence of ground truth supervision, could adversely affect the convergence of learning algorithms. This problem is challenging yet rewarding as it can completely eradicate the costs of obtaining laborious annotations and enable such systems to be deployed without human intervention. To this end, we propose a novel unsupervised Generative Cooperative Learning (GCL) approach for video anomaly detection that exploits the low frequency of anomalies towards building a cross-supervision between a generator and a discriminator. In essence, both networks get trained in a cooperative fashion, thereby facilitating the overall convergence. We conduct extensive experiments on two large-scale video anomaly detection datasets, UCF crime and ShanghaiTech. Consistent improvement over the existing state-of-the-art unsupervised and OCC methods corroborate the effectiveness of our approach.
   ```
 
-## Related topics
+## Tools
+
+`anomalib`: An anomaly detection library comprising state-of-the-art algorithms and features such as experiment management, hyper-parameter optimization, and edge inference. [Project Page](https://github.com/openvinotoolkit/anomalib).
+
+`PyAnomaly`: A PyTorch toolbox for video anomaly detection. [Paper](https://dl.acm.org/doi/10.1145/3394171.3414540), [Project Page](https://github.com/YuhaoCheng/PyAnomaly).
+
+## Related Topics
 
 - Domain Adaptation/Generalization
 
 - Meta learning
 
-- ~~Few/zero shot learning~~
+- Few/zero shot learning
 
 - Contrastive Learning
 
@@ -635,12 +653,10 @@ $^{***}$ *This datatset include a validation set that contains 64 videos.*
 If you find our work useful, please cite our paper:
 
 ```latex
-@inproceedings{TMAE,
-  title={Detecting Anomalous Events from Unlabeled Videos via Temporal Masked Auto-Encoding},
-  author={Hu, Jingtao and Yu, Guang and Wang, Siqi and Zhu, En and Cai, Zhiping and Zhu, Xinzhong},
-  booktitle={2022 IEEE International Conference on Multimedia and Expo (ICME)},
-  pages={1--6},
-  year={2022},
-  organization={IEEE}
+@article{liu2023generalized,
+  title={Generalized Video Anomaly Event Detection: Systematic Taxonomy and Comparison of Deep Models},
+  author={Liu, Yang and Yang, Dingkang and Wang, Yan and Liu, Jing and Song, Liang},
+  journal={arXiv preprint arXiv:2302.05087},
+  year={2023}
 }
 ```
