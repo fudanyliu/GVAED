@@ -4,7 +4,7 @@ This is the official repository for our [paper](https://arxiv.org/abs/2302.05087
 
 ## Overview
 
-![overview.png](C:\Users\86188\Desktop\综述\Git\overview.png)
+![overview.png](./overview.png)
 
 ## Datasets
 
