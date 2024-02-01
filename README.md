@@ -750,7 +750,7 @@ $^{***}$ *This datatset include a validation set that contains 64 videos.*
 
 ## Inference Speed
 
-GVAED typically employs Average Inference Speed (AIS) as a metric for visually gauging the model's overhead cost. Comparisons across reported figures in the existing literature are often challenging due to variations in experimental environments and computational platforms. Recent advancements in GVAED research, such as object-level methods and weakly-supervised schemes, frequently involve intricate data preprocessing and the utilization of pre-trained models. Examples include foreground object detection, optical flow estimation, and spatial-temporal feature extraction using well-trained 3D convolutional networks. It remains unclear whether the computational cost and processing time associated with these aspects are factored into the overhead cost of the proposed model. Consequently, reporting inference speed is not a widespread practice, and the limited works providing such results often lack a comprehensive description of the experimental setup. Nevertheless, diligent efforts were made to aggregate AIS data from existing studies, aiming to offer an insightful overview of the trajectory in lightweight GVAED research. Acknowledging the influence of image resolution on model inference speed, we adhered to the approach outlined by Ramachandra *et al.*, summarizing the data while concurrently documenting the datasets used for model testing. The results are presented below:
+GVAED typically employs Average Inference Speed (AIS) as a metric for visually gauging the model's overhead cost. Comparisons across reported figures in the existing literature are often challenging due to variations in experimental environments and computational platforms. Recent advancements in GVAED research, such as object-level methods and weakly-supervised schemes, frequently involve intricate data preprocessing and the utilization of pre-trained models. Examples include foreground object detection, optical flow estimation, and spatial-temporal feature extraction using well-trained 3D convolutional networks. It remains unclear whether the computational cost and processing time associated with these aspects are factored into the overhead cost of the proposed model. Consequently, reporting inference speed is not a widespread practice, and the limited works providing such results often lack a comprehensive description of the experimental setup. Nevertheless, diligent efforts were made to aggregate AIS data from existing studies, aiming to offer an insightful overview of the trajectory in lightweight GVAED research. Acknowledging the influence of image resolution on model inference speed, we adhered to the approach outlined by [Ramachandra et al.](https://ieeexplore.ieee.org/abstract/document/9271895), summarizing the data while concurrently documenting the datasets used for model testing. The results are presented below:
 
 | Year | Method                                                       | AIS (FPS) | Dataset                                   |
 | ---- | ------------------------------------------------------------ | --------- | ----------------------------------------- |
@@ -791,10 +791,6 @@ We recommend readers to reproduce the existing methods on their own particular p
 
 - Domain Adaptation/Generalization
 
-- Meta learning
-
-- Few/zero shot learning
-
 - Contrastive Learning
 
 - Graph Learning
@@ -803,17 +799,17 @@ We recommend readers to reproduce the existing methods on their own particular p
 
 - Diffusion Model
 
-- Online Evolutionary Learning
+- **Online Evolutionary Learning**
 
 ## Citation
 
 If you find our work useful, please cite our paper:
 
 ```latex
-@article{liu2023generalized,
-  title={Generalized Video Anomaly Event Detection: Systematic Taxonomy and Comparison of Deep Models},
-  author={Liu, Yang and Yang, Dingkang and Wang, Yan and Liu, Jing and Song, Liang},
-  journal={arXiv preprint arXiv:2302.05087},
-  year={2023}
+@article{yang2024generalized,
+  title={Generalized video anomaly event detection: Systematic taxonomy and comparison of deep models},
+  author={Yang Liu, Dingkang Yang, Yan Wang, Jing Liu, Jun Liu, Azzedine Boukerche, Peng Sun, Liang Song},
+  journal={ACM Computing Surveys},
+  year={2024}
 }
 ```
