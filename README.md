@@ -803,7 +803,7 @@ We recommend readers to reproduce the existing methods on their own particular p
 
 - Diffusion Model
 
-- **Online Evolutionary Learning**
+- **Online Evolutive Learning**
 
 ## Citation
 
