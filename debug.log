@@ -1,0 +1,21 @@
+[1115/175532:INFO:mailmaster_exe.cpp(96)] Start ======================================================
+[1115/175532:INFO:mailmaster_exe.cpp(97)] Commandline: --type=renderer --force-device-scale-factor=1.25 --no-sandbox --disable-databases --lang=en-US --lang=zh-CN --log-file="C:\Users\86188\AppData\Local\Netease\MailMaster\logs\web.log" --product-version="Chrome/49.0.2623.110 MailMasterPC/4.19.5.1006" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-gpu-compositing --channel="356.1.868292614\263720953" /prefetch:1
+[1115/175532:INFO:mailmaster_exe.cpp(57)] Environment: {"CPULogicalCores":16,"CPUModel":"AMD Ryzen 7 5800H with Radeon Graphics         ","Mac":["EC2E98E46353"],"Memory":"1171/15773M","OSArchitecture":"x86_64","OSVersion":"10.0.19045"}
+[1115/175532:INFO:mailmaster_exe.cpp(58)] Exe.Path: C:\Program Files (x86)\Netease\MailMaster\Application\mailmaster.exe
+[1115/175532:INFO:mailmaster_exe.cpp(61)] Last system shutdown time: 2023-11-10 17:22:44.424 UTC
+[1115/175532:INFO:mailmaster_exe.cpp(63)] System start time: 2023-11-10 17:22:57.000 UTC
+[1115/175532:INFO:main_dll_loader.cpp(68)] Version: 4.19.5.1006
+[1115/184607:INFO:mailmaster_exe.cpp(96)] Start ======================================================
+[1115/184607:INFO:mailmaster_exe.cpp(97)] Commandline: --type=renderer --force-device-scale-factor=1.25 --no-sandbox --disable-databases --lang=en-US --lang=zh-CN --log-file="C:\Users\86188\AppData\Local\Netease\MailMaster\logs\web.log" --product-version="Chrome/49.0.2623.110 MailMasterPC/4.19.5.1006" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-gpu-compositing --channel="356.2.1175695830\201339516" /prefetch:1
+[1115/184607:INFO:mailmaster_exe.cpp(57)] Environment: {"CPULogicalCores":16,"CPUModel":"AMD Ryzen 7 5800H with Radeon Graphics         ","Mac":["EC2E98E46353"],"Memory":"575/15773M","OSArchitecture":"x86_64","OSVersion":"10.0.19045"}
+[1115/184607:INFO:mailmaster_exe.cpp(58)] Exe.Path: C:\Program Files (x86)\Netease\MailMaster\Application\mailmaster.exe
+[1115/184607:INFO:mailmaster_exe.cpp(61)] Last system shutdown time: 2023-11-10 17:22:44.424 UTC
+[1115/184607:INFO:mailmaster_exe.cpp(63)] System start time: 2023-11-10 17:22:57.000 UTC
+[1115/184607:INFO:main_dll_loader.cpp(68)] Version: 4.19.5.1006
+[1115/212314:INFO:mailmaster_exe.cpp(96)] Start ======================================================
+[1115/212314:INFO:mailmaster_exe.cpp(97)] Commandline: --type=renderer --force-device-scale-factor=1.25 --no-sandbox --disable-databases --lang=en-US --lang=zh-CN --log-file="C:\Users\86188\AppData\Local\Netease\MailMaster\logs\web.log" --product-version="Chrome/49.0.2623.110 MailMasterPC/4.19.5.1006" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-gpu-compositing --channel="356.3.1415505517\600718293" /prefetch:1
+[1115/212314:INFO:mailmaster_exe.cpp(57)] Environment: {"CPULogicalCores":16,"CPUModel":"AMD Ryzen 7 5800H with Radeon Graphics         ","Mac":["EC2E98E46353"],"Memory":"861/15773M","OSArchitecture":"x86_64","OSVersion":"10.0.19045"}
+[1115/212314:INFO:mailmaster_exe.cpp(58)] Exe.Path: C:\Program Files (x86)\Netease\MailMaster\Application\mailmaster.exe
+[1115/212314:INFO:mailmaster_exe.cpp(61)] Last system shutdown time: 2023-11-10 17:22:44.424 UTC
+[1115/212314:INFO:mailmaster_exe.cpp(63)] System start time: 2023-11-10 17:22:56.000 UTC
+[1115/212314:INFO:main_dll_loader.cpp(68)] Version: 4.19.5.1006
